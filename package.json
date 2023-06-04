@@ -1,0 +1,32 @@
+{
+  "name": "blog_basic",
+  "version": "1.0.0",
+  "description": "newpiece",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --inspect index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chanhhhhhh/web_newpiece.git"
+  },
+  "keywords": [
+    "onepiece",
+    "chanh",
+    "anime",
+    "wallpaper"
+  ],
+  "author": "chanh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chanhhhhhh/web_newpiece/issues"
+  },
+  "homepage": "https://github.com/Chanhhhhhh/web_newpiece#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
