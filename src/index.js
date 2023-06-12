@@ -14,16 +14,16 @@ express.urlencoded({
 extended: true,
 }),
 );
-     app.use(express.json());
+app.use(express.json());
 // HTTP logger
 // app.use(morgan('combined'));
 // template engine
 // app.engine("handlebars",handlebars({defaultLayout:'main'}));
 app.engine('hbs', handlebars.engine({ extname: '.hbs' }));
-    app.set('view engine', 'hbs');
-      app.set('views', path.join(__dirname, 'resources/views'));
+app.set('view engine', 'hbs');
+app.set('views', path.join(__dirname, 'resources/views'));
 
-   route(    app);
+route(app);
 
 app.listen(port, () => {
 console.log(`Example app listening at http://localhost:${port}`);
