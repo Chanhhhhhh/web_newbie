@@ -3,11 +3,18 @@ const express = require('express');
 const morgan = require('morgan');
 const handlebars = require('express-handlebars');
 // import { handlebars } from 'express-handlebars';
-
 const app = express();
-const port = 2000;
+const port = 3000;
 const route = require('./routes');
+const bodyParser = require('body-parser');
+
 // khai bao anh join public, static files(file tinh)
+app.use(bodyParser.json());
+app.use(
+bodyParser.urlencoded({
+extended: true,
+}),
+);
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(
 express.urlencoded({
