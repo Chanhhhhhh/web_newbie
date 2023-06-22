@@ -8,8 +8,9 @@ res.send({ book: data });
 }
 
 findData(req, res) {
-var data = Book.getbyID(req.params.id);
-res.send({ book: data });
+Book.getbyID(req.params.id, function (result) {
+res.send({ book: result });
+});
 }
 }
 
